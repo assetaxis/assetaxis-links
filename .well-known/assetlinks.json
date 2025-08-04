@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.example.assetaxis",
+      "sha256_cert_fingerprints": [
+        "89:41:71:13:27:23:75:C8:40:C9:CD:13:92:55:BC:81:C5:8B:42:F1:50:AF:F8:BB:6E:7E:B5:6F:F9:13:87:B6"
+      ]
+    }
+  }
+]
