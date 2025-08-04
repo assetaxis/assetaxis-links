@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    const fallback = 'https://assetaxis.com/not-found';
+
+    if (id) {
+      // Redirect to your app
+      window.location.href = `assetaxis://details?id=${id}`;
+    } else {
+      // Optional fallback
+      window.location.href = fallback;
+    }
+  </script>
+</head>
+<body>
+  <p>Opening app... If nothing happens, <a id="manual-link" href="#">click here</a>.</p>
+  <script>
+    document.getElementById("manual-link").href = `assetaxis://details?id=${new URLSearchParams(window.location.search).get('id')}`;
+  </script>
+</body>
+</html>
